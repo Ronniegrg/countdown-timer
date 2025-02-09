@@ -1,15 +1,17 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
-// https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: "/countdown-timer/",
+  base: "./",
   build: {
+    outDir: "dist",
     assetsDir: "assets",
     rollupOptions: {
       output: {
-        assetFileNames: "assets/[name][extname]",
+        assetFileNames: (assetInfo) => {
+          return `assets/${assetInfo.name}`;
+        },
       },
     },
   },

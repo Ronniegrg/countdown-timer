@@ -1,13 +1,13 @@
-import './App.css'
+import { useState, useEffect } from "react";
+import "./App.css";
 import CountDownTimer from "./components/CountDown.jsx";
 
 function App() {
-
-    return (
-        <div className="App">
-            <CountDownTimer/>
-        </div>
-    )
+  return (
+    <div className="App">
+      <CountDownTimer />
+    </div>
+  );
 }
 
-export default App
+export default App;

@@ -7,7 +7,7 @@
 }
 
 body {
-  background: url("./assets/bg-img.jpg") top center;
+  background: url("/countdown-timer/assets/bg-img.jpg") top center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
