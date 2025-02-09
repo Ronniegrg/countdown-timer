@@ -93,7 +93,7 @@ button:hover {
 
 .countdown-date {
     color: #eafbfa;
-    maring: 0 0 1.5rem;
+    margin: 0 0 1.5rem;
     text-align: center;
     font-size: clamp(1rem, 3vw, 1.25rem);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
