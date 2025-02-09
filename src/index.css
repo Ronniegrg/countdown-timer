@@ -7,7 +7,7 @@
 }
 
 body {
-    background: url("./assets/bg-img.jpg") top center;
+    background: url("./img/bg-img.jpg") top center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -34,7 +34,7 @@ body {
 }
 
 label {
-    font-width: 600;
+    font-weight: 600;
     margin-bottom: 0.5rem;
     color: #333;
 }
@@ -48,7 +48,7 @@ input {
     padding: 0.75rem;
     width: 100%;
     font-size: 1rem;
-    transition: border-color 02s ease;
+    transition: border-color 0.2s ease;
 }
 
 input:focus {
@@ -79,7 +79,7 @@ button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: clamp(1.25rem, 4vw, 15rem);
+    font-size: clamp(1.25rem, 4vw, 1.5rem);
     margin: 1rem 0;
 }
 
@@ -117,6 +117,7 @@ button:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     padding: 1rem;
     font-size: clamp(1.5rem, 5vw, 2.5rem);
     font-weight: 700;
@@ -161,6 +162,25 @@ button:hover {
 .control-buttons button:hover {
     background-color: #0b7c71;
     transform: scale(1.1);
+}
+
+@media (max-width: 480px) {
+    .countdown-display {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.75rem;
+    }
+
+    .countdown-value {
+        font-size: clamp(1.25rem, 4vw, 1.75rem);
+    }
+
+    .countdown-value > span {
+        font-size: 0.75rem;
+    }
+
+    .control-buttons {
+        margin-top: 1.5rem;
+    }
 }
 
 @media (max-width: 360px) {
